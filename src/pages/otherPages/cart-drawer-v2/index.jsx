@@ -11,7 +11,6 @@ import Products from "@/components/homes/home-1/Products";
 import Products2 from "@/components/homes/home-1/Products2";
 import Shopgram from "@/components/homes/home-1/Shopgram";
 import Testimonials from "@/components/homes/home-1/Testimonials";
-import Newsletter from "@/components/modals/Newsletter";
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
   title: "Cart Drawer v2 || Vineta - Multipurpose Reactjs eCommerce Template",
@@ -35,7 +34,6 @@ export default function CartDrawerPage2() {
       <Shopgram />
       <Features />
       <Footer1 />
-      <Newsletter />
     </>
   );
 }

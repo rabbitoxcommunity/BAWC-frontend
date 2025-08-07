@@ -14,11 +14,11 @@
 // .sw-height .swiper-slide {
 //   height: 100% !important;
 // }
-.menuActive {
+a.item-link.active{
   color: var(--primary) !important;
 }
 .rc-slider .rc-slider-handle {
-  border: solid 2px #ff6f61;
+  border: solid 2px #d70200;
   opacity: 1 !important;
   background-color: #fff !important;
   width: 20px;
@@ -29,17 +29,17 @@
 }
 
 .rc-slider .rc-slider-handle:hover {
-  border-color: #ff6f61;
+  border-color: #d70200;
 }
 
 .rc-slider .rc-slider-handle-dragging {
-  border-color: #ff6f61 !important;
+  border-color: #d70200 !important;
   box-shadow: none !important;
 }
 
 .rc-slider .rc-slider-track,
 .rc-slider .rc-slider-tracks {
-  background-color: #ff6f61;
+  background-color: #d70200;
 }
 .image-compare {
   border-radius: 16px !important;

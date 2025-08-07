@@ -286,33 +286,54 @@ export const blogPosts4 = [
   },
 ];
 
-export const recentBlogPosts = [
+export const shopItems = [
   {
-    id: 39,
+    id: 1,
     imageSrc: "/images/blog/recent-1.jpg",
     alt: "img-recent-blog",
-    title: "The Power of Monochrome: Styling One Color",
-    date: "Sep 19 2024",
-    width: 128,
-    height: 128,
+    title: "Laptops",
   },
   {
-    id: 40,
-    imageSrc: "/images/blog/recent-2.jpg",
+    id: 2,
+    imageSrc: "/images/blog/recent-1.jpg",
     alt: "img-recent-blog",
-    title: "10 Must-Have Accessories for Every Season",
-    date: "Sep 19 2024",
-    width: 128,
-    height: 128,
+    title: "Desktops",
   },
   {
-    id: 41,
-    imageSrc: "/images/blog/recent-3.jpg",
+    id: 3,
+    imageSrc: "/images/blog/recent-1.jpg",
     alt: "img-recent-blog",
-    title: "How to Elevate Your Look with Layering",
-    date: "Sep 19 2024",
-    width: 128,
-    height: 128,
+    title: "Monitors",
+  },
+  {
+    id: 4,
+    imageSrc: "/images/blog/recent-1.jpg",
+    alt: "img-recent-blog",
+    title: "CCTV",
+  },
+  {
+    id: 5,
+    imageSrc: "/images/blog/recent-1.jpg",
+    alt: "img-recent-blog",
+    title: "Network & Storage",
+  },
+  {
+    id: 6,
+    imageSrc: "/images/blog/recent-1.jpg",
+    alt: "img-recent-blog",
+    title: "Switches",
+  },
+  {
+    id: 7,
+    imageSrc: "/images/blog/recent-1.jpg",
+    alt: "img-recent-blog",
+    title: "Servers",
+  },
+  {
+    id: 7,
+    imageSrc: "/images/blog/recent-1.jpg",
+    alt: "img-recent-blog",
+    title: "Keyboard & Mouse",
   },
 ];
 
@@ -797,7 +818,7 @@ export const allBlogs = [
   ...blogPosts3,
   ...blogCategories,
   ...blogPosts4,
-  ...recentBlogPosts,
+  ...shopItems,
   ...blogPosts5,
   ...blogPostsStyle2,
   ...blogPostsLarge,

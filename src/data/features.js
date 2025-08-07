@@ -22,12 +22,9 @@ export const iconFeatures = [
 ];
 
 export const iconBoxes = [
-  {
-    title: "Free shipping for order over $100",
-    justify: "justify-content-sm-start",
-  },
-  { title: "Free return in 14 days", justify: "justify-content-center" },
-  { title: "Payment secured", justify: "justify-content-center" },
+  { title: "Direct WhatsApp Order Support", justify: "justify-content-sm-start", },
+  { title: "Quick & Free Delivery", justify: "justify-content-center" },
+  { title: "Easy Return Within 7 Days", justify: "justify-content-center" },
 ];
 
 export const features = [
@@ -56,22 +53,22 @@ export const features = [
 
 export const features2 = [
   {
-    icon: "icon-precision",
-    title: "Precision in Every Stitch",
+    icon: "icon-quality",
+    title: "Top-Quality Products",
     description:
-      "At Vineta, we use only premium materials, ensuring our collections offer superior comfort and lasting durability. Every piece is crafted with care and attention to detail.",
+      "Only trusted and tested electronics from leading brands.",
   },
   {
-    icon: "icon-elegance",
-    title: "Effortless Elegance",
+    icon: "icon-flash-star",
+    title: "Performance-Driven Picks",
     description:
-      "Our designs embrace simplicity at its finest. Vineta’s understated yet refined style captures the essence of modern fashion, making a statement.",
+      "Selected for speed, power, and real-world performance.",
   },
   {
-    icon: "icon-fashion-body",
-    title: "Fashion for Every Body",
+    icon: "icon-customer",
+    title: "Customer-Centric Selection",
     description:
-      "We celebrate individuality with a diverse range of sizes, offering clothing that fits and flatters every body type. At Vineta, fashion is for everyone.",
+      "Curated based on what our customers actually want and love.",
   },
 ];
 

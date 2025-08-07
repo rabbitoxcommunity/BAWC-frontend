@@ -4722,19 +4722,13 @@ export const products38 = [
 export const products39 = [
   {
     id: 256,
-    imgSrc: "/images/banner/phonecase-1.jpg",
-    title: "Elago Liquid Silicone",
-    price: 130,
-    oldPrice: 150,
-    tag: "Sale 50% OFF",
+    imgSrc: "/img/01.jpg",
+    title: "Trusted Electronics for Professionals",
   },
   {
     id: 257,
-    imgSrc: "/images/banner/phonecase-2.jpg",
-    title: "Elago Smooth Silicone",
-    price: 100,
-    oldPrice: 130,
-    tag: "Sale 50% OFF",
+    imgSrc: "/img/02.jpg",
+    title: "Fast & Free Shipping on Bulk Orders",
   },
 ];
 

@@ -48,31 +48,24 @@ export const fashionSlides = [
 
 export const slides2 = [
   {
-    imgSrc: "/images/slider/electronic/slider-electronic-1.png",
+    imgSrc: "/img/banner/01.jpg",
     imgWidth: 627,
     imgHeight: 627,
-    bgType: "bg-type-4 type-image-right",
+    // bgType: "bg-type-4 type-image-right",
     reverse: false,
     subTitle: "APPLE WATCHES COLLECTION",
-    heading: "Sale up to <br /> 15% Off",
+    heading: "Wireless Bluetooth <br/> Over-Ear Headphones",
+    text_color : 'dark'
   },
   {
-    imgSrc: "/images/slider/electronic/slider-electronic-2.png",
+    imgSrc: "/img/banner/02.jpg",
     imgWidth: 1920,
     imgHeight: 731,
-    bgType: "bg-type-5",
-    reverse: true,
+    // bgType: "bg-type-5",
+    // reverse: true,
     subTitle: "APPLE MAGSAFE CHARGER",
-    heading: "Next-Level <br /> Tech",
-  },
-  {
-    imgSrc: "/images/slider/electronic/slider-electronic-3.png",
-    imgWidth: 1920,
-    imgHeight: 731,
-    bgType: "bg-type-6 type-image-right",
-    reverse: false,
-    subTitle: "ON-EAR HEADPHONES",
-    heading: "Power Up <br /> Your Life",
+    heading: "TP-Link Tapo 1080P <br /> Indoor Security",
+    text_color : 'dark'
   },
 ];
 

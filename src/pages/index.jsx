@@ -1,39 +1,38 @@
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
-import Topbar1 from "@/components/headers/Topbar1";
-import Banner from "@/components/homes/home-1/Banner";
-import Brands from "@/components/common/Brands2";
-import Categories from "@/components/homes/home-1/Categories";
-import Collections from "@/components/homes/home-1/Collections";
-import Features from "@/components/homes/home-1/Features";
-import Hero from "@/components/homes/home-1/Hero";
-import Products from "@/components/homes/home-1/Products";
-import Products2 from "@/components/homes/home-1/Products2";
-import Shopgram from "@/components/homes/home-1/Shopgram";
-import Testimonials from "@/components/homes/home-1/Testimonials";
-import MetaComponent from "@/components/common/MetaComponent";
+
+import Categories from "./home/Categories";
+import Products from "./home/Products";
+import Products2 from "./home/Products2";
+import Collections from "./home/Collections";
+import Banner from "./home/Banner";
+import Features from "./home/Features";
+import Banner2 from "./home/Banner2";
+import Testimonials from "./home/Testimonials";
+import Features2 from "./home/Features2";
+import Hero from "./home/Hero";
+import Marquee from "@/components/Marquee";
 const metadata = {
-  title: "Home || Vineta - Multipurpose Reactjs eCommerce Template",
-  description: "Vineta - Multipurpose Reactjs eCommerce Template",
+  title: "Home || Leading IT Product Supplier in GCC and Africa | BAIT AL WAHDA",
+  description: "BAWC || Leading IT Product Supplier in GCC and Africa | BAIT AL WAHDA",
 };
 
 export default function HomePage() {
   return (
     <>
-      <MetaComponent meta={metadata} />
-      <Topbar1 />
-      <Header1 />
-      <Hero />
-      <Collections />
-      <Products />
-      <Banner />
-      <Categories />
-      <Products2 />
-      <Testimonials />
-      <Brands />
-      <Shopgram />
-      <Features />
-      <Footer1 />
+      <div className="bg-surface-2 home-phonecase">
+
+        <Hero />
+         <Marquee />
+        <Categories />
+        <Products />
+        <Collections />
+        <Banner />
+        <Features />
+        {/* <Products2 /> */}
+        {/* <Banner2 /> */}
+        <Testimonials />
+        <Features2 />
+
+      </div>
     </>
   );
 }

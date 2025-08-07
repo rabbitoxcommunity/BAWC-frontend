@@ -1,130 +1,99 @@
+
 export const categories = [
   {
-    imageSrc: "/images/cls-categories/fashion/top.jpg",
-    width: 696,
-    height: 773,
-    label: "Tops",
+    imgSrc: "/img/categories/01.png",
+    alt: "Laptops",
+    title: "Laptops",
   },
   {
-    imageSrc: "/images/cls-categories/fashion/accessories.jpg",
-    width: 696,
-    height: 773,
-    label: "Accessories",
+    imgSrc: "/img/categories/01.png",
+    alt: "All-in-One Computers",
+    title: "All-in-One Computers",
   },
   {
-    imageSrc: "/images/cls-categories/fashion/sportwear.jpg",
-    width: 696,
-    height: 773,
-    label: "Sportwear",
+    imgSrc: "/img/categories/01.png",
+    alt: "Desktops & Mini PCs",
+    title: "Desktops & Mini PCs",
   },
   {
-    imageSrc: "/images/cls-categories/fashion/men.jpg",
-    width: 696,
-    height: 696,
-    label: "Men",
+    imgSrc: "/img/categories/01.png",
+    alt: "Gaming Laptops",
+    title: "Gaming Laptops",
   },
   {
-    imageSrc: "/images/cls-categories/fashion/kid.jpg",
-    width: 696,
-    height: 696,
-    label: "Kids",
-  },
-];
-
-export const categories2 = [
-  {
-    imgSrc: "/images/cls-categories/fashion/circle-dress.jpg",
-    title: "Dress",
+    imgSrc: "/img/categories/01.png",
+    alt: "Monitors",
+    title: "Monitors",
   },
   {
-    imgSrc: "/images/cls-categories/fashion/circle-partywear.jpg",
-    title: "Partywear",
+    imgSrc: "/img/categories/01.png",
+    alt: "Gaming Gear & Accessories",
+    title: "Gaming Gear & Accessories",
   },
   {
-    imgSrc: "/images/cls-categories/fashion/circle-jewelry.jpg",
-    title: "Jewelry",
+    imgSrc: "/img/categories/01.png",
+    alt: "Graphics Cards",
+    title: "Graphics Cards",
   },
-  {
-    imgSrc: "/images/cls-categories/fashion/circle-tops.jpg",
-    title: "Tops",
+    {
+    imgSrc: "/img/categories/01.png",
+    alt: "Motherboards",
+    title: "Motherboards",
   },
-  {
-    imgSrc: "/images/cls-categories/fashion/circle-bottoms.jpg",
-    title: "Bottoms",
+      {
+    imgSrc: "/img/categories/01.png",
+    alt: "Docking Stations",
+    title: "Docking Stations",
   },
-  {
-    imgSrc: "/images/cls-categories/fashion/circle-sportwear.jpg",
-    title: "Sportwear",
+      {
+    imgSrc: "/img/categories/01.png",
+    alt: "Computer Accessories",
+    title: "Computer Accessories",
   },
-];
-export const categories22 = [
-  {
-    imgSrc: "/images/cls-categories/fashion/circle-bottoms.jpg",
-    title: "Bottoms",
+      {
+    imgSrc: "/img/categories/01.png",
+    alt: "Projectors",
+    title: "Projectors",
   },
-  {
-    imgSrc: "/images/cls-categories/fashion/circle-dress.jpg",
-    title: "Dress",
+      {
+    imgSrc: "/img/categories/01.png",
+    alt: "Storage Devices & Solutions",
+    title: "Storage Devices & Solutions",
   },
-  {
-    imgSrc: "/images/cls-categories/fashion/circle-jewelry.jpg",
-    title: "Jewelry",
+      {
+    imgSrc: "/img/categories/01.png",
+    alt: "Servers & Workstations",
+    title: "Servers & Workstations",
   },
-  {
-    imgSrc: "/images/cls-categories/fashion/circle-tops.jpg",
-    title: "Tops",
+      {
+    imgSrc: "/img/categories/01.png",
+    alt: "Software & Licenses",
+    title: "Software & Licenses",
   },
-  {
-    imgSrc: "/images/cls-categories/fashion/circle-partywear.jpg",
-    title: "Partywear",
+      {
+    imgSrc: "/img/categories/01.png",
+    alt: "CCTV & Security Systems",
+    title: "CCTV & Security Systems",
   },
-
-  {
-    imgSrc: "/images/cls-categories/fashion/circle-sportwear.jpg",
-    title: "Sportwear",
+      {
+    imgSrc: "/img/categories/01.png",
+    alt: "POS (Point of Sale) Solutions",
+    title: "POS (Point of Sale) Solutions",
   },
-];
-
-export const categories3 = [
-  {
-    imgSrc: "/images/cls-categories/electronic/smartphone.png",
-    alt: "Phones",
-    title: "Phones",
+      {
+    imgSrc: "/img/categories/01.png",
+    alt: "Display & Digital Signage Solutions",
+    title: "Display & Digital Signage Solutions",
   },
-  {
-    imgSrc: "/images/cls-categories/electronic/earphone.png",
-    alt: "Earphones",
-    title: "Earphones",
+      {
+    imgSrc: "/img/categories/01.png",
+    alt: "Printers & Scanners",
+    title: "Printers & Scanners",
   },
-  {
-    imgSrc: "/images/cls-categories/electronic/cable.png",
-    alt: "Cables",
-    title: "Cables",
-  },
-  {
-    imgSrc: "/images/cls-categories/electronic/smart-watch.png",
-    alt: "Smart Watches",
-    title: "Smart Watches",
-  },
-  {
-    imgSrc: "/images/cls-categories/electronic/charge.png",
-    alt: "Chargers",
-    title: "Chargers",
-  },
-  {
-    imgSrc: "/images/cls-categories/electronic/screen-protector.png",
-    alt: "Screen Protectors",
-    title: "Screen Protectors",
-  },
-  {
-    imgSrc: "/images/cls-categories/electronic/headphone.png",
-    alt: "Headphones",
-    title: "Headphones",
-  },
-  {
-    imgSrc: "/images/cls-categories/electronic/keyboard.png",
-    alt: "Keyboards",
-    title: "Keyboards",
+      {
+    imgSrc: "/img/categories/01.png",
+    alt: "Networking Products",
+    title: "Networking Products",
   },
 ];
 
@@ -365,39 +334,39 @@ export const items = [
 
 export const categories9 = [
   {
-    imgSrc: "/images/cls-categories/electronic/smartphone.png",
+    imgSrc: "/img/categories/smartphone.png",
     title: "Phones",
   },
   {
-    imgSrc: "/images/cls-categories/electronic/earphone.png",
+    imgSrc: "/img/categories/earphone.png",
     title: "Earphones",
   },
   {
-    imgSrc: "/images/cls-categories/electronic/cable.png",
+    imgSrc: "/img/categories/cable.png",
     title: "Cables",
   },
   {
-    imgSrc: "/images/cls-categories/electronic/smart-watch.png",
+    imgSrc: "/img/categories/smart-watch.png",
     title: "Smart Watches",
   },
   {
-    imgSrc: "/images/cls-categories/electronic/charge.png",
+    imgSrc: "/img/categories/charge.png",
     title: "Chargers",
   },
   {
-    imgSrc: "/images/cls-categories/electronic/screen-protector.png",
+    imgSrc: "/img/categories/screen-protector.png",
     title: "Screen Protectors",
   },
   {
-    imgSrc: "/images/cls-categories/electronic/headphone.png",
+    imgSrc: "/img/categories/01.png",
     title: "Headphones",
   },
   {
-    imgSrc: "/images/cls-categories/electronic/keyboard.png",
+    imgSrc: "/img/categories/keyboard.png",
     title: "Keyboards",
   },
   {
-    imgSrc: "/images/cls-categories/electronic/smart-watch.png",
+    imgSrc: "/img/categories/smart-watch.png",
     title: "Smart Watches",
   },
 ];

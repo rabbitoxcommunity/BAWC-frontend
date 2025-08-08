@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useContextElement } from "@/context/Context";
 export default function ProductCard1({
   product,
   styleClass = "style-1",
@@ -11,15 +10,6 @@ export default function ProductCard1({
 }) {
   const [currentImage, setCurrentImage] = useState(product.imgSrc);
 
-  const {
-    addToWishlist,
-    isAddedtoWishlist,
-    addToCompareItem,
-    isAddedtoCompareItem,
-    setQuickViewItem,
-    addProductToCart,
-    isAddedToCartProducts,
-  } = useContextElement();
 
   useEffect(() => {
     setCurrentImage(product.imgSrc);
@@ -61,94 +51,6 @@ export default function ProductCard1({
         )}
         {!product.isOutofSale && (
           <>
-            <ul className="list-product-btn">
-              {!styleClass.includes("style-3") && (
-                <li>
-                  <a
-                    href="#shoppingCart"
-                    data-bs-toggle="offcanvas"
-                    onClick={() => addProductToCart(product.id)}
-                    className={`hover-tooltip tooltip-${tooltipDirection} box-icon`}
-                  >
-                    <span className="icon icon-cart2" />
-                    <span className="tooltip">
-                      {isAddedToCartProducts(product.id)
-                        ? "Already Added"
-                        : "Add to Cart"}
-                    </span>
-                  </a>
-                </li>
-              )}
-              <li
-                className={`wishlist ${
-                  isAddedtoWishlist(product.id) ? "addwishlist" : ""
-                }`}
-              >
-                <a
-                  onClick={() => addToWishlist(product.id)}
-                  className={`hover-tooltip tooltip-${tooltipDirection} box-icon`}
-                >
-                  <span
-                    className={`icon ${
-                      isAddedtoWishlist(product.id)
-                        ? "icon-trash"
-                        : "icon-heart2"
-                    } `}
-                  />
-                  <span className="tooltip">
-                    {" "}
-                    {isAddedtoWishlist(product.id)
-                      ? "Remove Wishlist"
-                      : "Add to Wishlist"}
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#quickView"
-                  data-bs-toggle="modal"
-                  onClick={() => setQuickViewItem(product)}
-                  className={`hover-tooltip tooltip-${tooltipDirection} box-icon quickview`}
-                >
-                  <span className="icon icon-view" />
-                  <span className="tooltip">Quick View</span>
-                </a>
-              </li>
-              <li className="compare">
-                <a
-                  href="#compare"
-                  onClick={() => addToCompareItem(product.id)}
-                  data-bs-toggle="modal"
-                  className={`hover-tooltip tooltip-${tooltipDirection} box-icon`}
-                >
-                  <span className="icon icon-compare" />
-                  <span className="tooltip">
-                    {" "}
-                    {isAddedtoCompareItem(product.id)
-                      ? "Already compared"
-                      : "Add to Compare"}
-                  </span>
-                </a>
-              </li>
-            </ul>
-            {styleClass.includes("style-3") && (
-              <div className="product-btn-main">
-                <a
-                  href="#shoppingCart"
-                  data-bs-toggle="offcanvas"
-                  className="btn-main-product"
-                  onClick={() => addProductToCart(product.id)}
-                >
-                  <span className="icon icon-cart2" />
-                  <span className="text-md fw-medium">
-                    {" "}
-                    {isAddedToCartProducts(product.id)
-                      ? "Already Added"
-                      : "Add to Cart"}{" "}
-                  </span>
-                </a>
-              </div>
-            )}
             {product.sizes?.length > 0 && (
               <ul className="size-box">
                 {product.sizes.map((size, index) => (

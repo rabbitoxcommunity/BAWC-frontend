@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useContextElement } from "@/context/Context";
 
 export default function ProductCard1({
   product,

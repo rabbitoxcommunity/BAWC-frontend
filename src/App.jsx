@@ -2,14 +2,12 @@ import { useEffect } from "react";
 import "../public/scss/main.scss";
 import "photoswipe/dist/photoswipe.css";
 import "rc-slider/assets/index.css";
-import Context from "@/context/Context";
 
 import WOW from "@/utlis/wow";
 import { Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "./pages";
 import ScrollTopBehaviour from "./components/ScrollToTopBehaviour";
 import MobileMenu from "./components/MobileMenu";
-import Quickview from "./components/Quickview";
 import ScrollTop from "./components/ScrollTop";
 import Footer2 from "./components/Footer";
 import Header from "./components/Header";
@@ -115,7 +113,6 @@ function App() {
   }, [pathname]);
   return (
     <>
-      <Context>
         <Topbar />
         <Header />
         <Routes>
@@ -125,8 +122,6 @@ function App() {
         </Routes>
         <Footer2 />
         <MobileMenu />
-        <Quickview />
-      </Context>
       <ScrollTop />
       <ScrollTopBehaviour />
     </>

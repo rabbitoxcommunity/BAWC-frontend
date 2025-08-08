@@ -1,20 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useContextElement } from "@/context/Context";
 
 export default function ProductCard6({ product }) {
   const [currentImage, setCurrentImage] = useState(product.imgSrc);
-
-  const {
-    addToWishlist,
-    isAddedtoWishlist,
-    addToCompareItem,
-    isAddedtoCompareItem,
-    setQuickViewItem,
-    addProductToCart,
-    isAddedToCartProducts,
-  } = useContextElement();
 
   useEffect(() => {
     setCurrentImage(product.imgSrc);

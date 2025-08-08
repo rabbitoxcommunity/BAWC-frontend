@@ -61,7 +61,7 @@ export default function About() {
           <div className="col-xl-5 col-md-6">
             <div className="image radius-16 overflow-hidden w-100 h-100">
               <img
-                src="/images/section/about-2.jpg"
+                src="/img/choose-use.jpg"
                 alt=""
                 className="lazyload w-100 h-100 object-fit-cover"
                 width={586}

@@ -666,6 +666,96 @@ export const slidesData = [
     alt: "categories",
     title: "Promotions",
   },
+   {
+    id: 4,
+    imageSrc: "/images/cls-categories/fashion/circle-trending.jpg",
+    alt: "categories",
+    title: "Trendings",
+  },
+  {
+    id: 5,
+    imageSrc: "/images/cls-categories/fashion/circle-men.jpg",
+    alt: "categories",
+    title: "Mens",
+  },
+  {
+    id: 6,
+    imageSrc: "/images/cls-categories/fashion/circle-women.jpg",
+    alt: "categories",
+    title: "Womens",
+  },
+  {
+    id: 7,
+    imageSrc: "/images/cls-categories/fashion/circle-promotion.jpg",
+    alt: "categories",
+    title: "Promotions",
+  },
+   {
+    id: 1,
+    imageSrc: "/images/cls-categories/fashion/circle-new-arrival.jpg",
+    alt: "categories",
+    title: "New Arrivals",
+  },
+  {
+    id: 2,
+    imageSrc: "/images/cls-categories/fashion/circle-top-rate.jpg",
+    alt: "categories",
+    title: "Top Rated",
+  },
+  {
+    id: 3,
+    imageSrc: "/images/cls-categories/fashion/circle-seller.jpg",
+    alt: "categories",
+    title: "Best sellers",
+  },
+  {
+    id: 4,
+    imageSrc: "/images/cls-categories/fashion/circle-trending.jpg",
+    alt: "categories",
+    title: "Trendings",
+  },
+  {
+    id: 5,
+    imageSrc: "/images/cls-categories/fashion/circle-men.jpg",
+    alt: "categories",
+    title: "Mens",
+  },
+  {
+    id: 6,
+    imageSrc: "/images/cls-categories/fashion/circle-women.jpg",
+    alt: "categories",
+    title: "Womens",
+  },
+  {
+    id: 7,
+    imageSrc: "/images/cls-categories/fashion/circle-promotion.jpg",
+    alt: "categories",
+    title: "Promotions",
+  },
+   {
+    id: 4,
+    imageSrc: "/images/cls-categories/fashion/circle-trending.jpg",
+    alt: "categories",
+    title: "Trendings",
+  },
+  {
+    id: 5,
+    imageSrc: "/images/cls-categories/fashion/circle-men.jpg",
+    alt: "categories",
+    title: "Mens",
+  },
+  {
+    id: 6,
+    imageSrc: "/images/cls-categories/fashion/circle-women.jpg",
+    alt: "categories",
+    title: "Womens",
+  },
+  {
+    id: 7,
+    imageSrc: "/images/cls-categories/fashion/circle-promotion.jpg",
+    alt: "categories",
+    title: "Promotions",
+  },
 ];
 
 export const jewelryItems = [

@@ -23,14 +23,14 @@ export default function Topbar() {
                 {
                   topbarContent?.map((ele, i) => {
                     return (
-                      <>
+                      <div key={i}>
                         <div className="marquee-child-item">
                           <p>{ele?.title}</p>
                         </div>
                         <div className="marquee-child-item">
                           <span className="dot" />
                         </div>
-                      </>
+                      </div>
                     )
                   })
                 }

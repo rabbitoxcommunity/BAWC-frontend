@@ -14,6 +14,8 @@ import Header from "./components/Header";
 import Topbar from "./components/Topbar";
 import About from "./pages/About";
 import Products from "./pages/Products/Products";
+import ProductDetails from "./pages/Products/ProductDetails";
+import Contact from "./pages/Contact";
 
 function App() {
   const { pathname } = useLocation();
@@ -119,6 +121,8 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
+          <Route path="product-detail/:id" element={<ProductDetails />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
         <Footer2 />
         <MobileMenu />

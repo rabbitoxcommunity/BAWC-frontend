@@ -15,10 +15,17 @@ const metadata = {
   description: "Vineta - Multipurpose Reactjs eCommerce Template",
 };
 export default function Products() {
+      const breadCrumb = {
+        title: "Products",
+        links: [
+            { title: "Home", link: "/" },
+            { title: "Products", link: "/products" },
+        ],
+    }
   return (
     <>
       <MetaComponent meta={metadata} />
-      <Breadcumb />
+      <Breadcumb breadcrumbs={breadCrumb} />
       <SubCollections3 parentClass="flat-spacing-2" />
       <ProductGrids parentClass="flat-spacing-24 pt-0" />
       <Features2 />

@@ -93,12 +93,20 @@
 .pswp__zoom-wrap {
 	width: auto;
 	height: auto;
+  object-fit: contain;
+  background-color: #fff;
 }
-
+.pswp--click-to-zoom img{
+  object-fit: contain;
+}
+.pswp img{
+  object-fit: contain !important;
+}
 .pswp--click-to-zoom.pswp--zoom-allowed .pswp__img {
 	cursor: -webkit-zoom-in;
 	cursor: -moz-zoom-in;
 	cursor: zoom-in;
+  object-fit: contain;
 }
 
 .pswp--click-to-zoom.pswp--zoomed-in .pswp__img {

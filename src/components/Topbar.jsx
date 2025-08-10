@@ -23,7 +23,7 @@ export default function Topbar() {
                 {
                   topbarContent?.map((ele, i) => {
                     return (
-                      <div key={i}>
+                      <div key={i} className="d-flex align-items-center gap-2">
                         <div className="marquee-child-item">
                           <p>{ele?.title}</p>
                         </div>

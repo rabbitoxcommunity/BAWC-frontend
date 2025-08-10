@@ -164,7 +164,7 @@ export default function Footer2() {
                       <a
                         className="infor_address"
                         target="_blank"
-                        href="https://www.google.com/maps?q=123Yarranst,Punchbowl,NSW2196,Australia"
+                        href="https://maps.app.goo.gl/6FumAdjhGRQ6uAV39"
                       >
                         Address:{" "}
                         <span>

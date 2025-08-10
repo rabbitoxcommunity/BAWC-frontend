@@ -224,6 +224,9 @@
   display: flex;
   gap: 8px;
   align-items: center;
+  .breadcrumb-item.dot:last-child{
+    display: none;
+  }
   .breadcrumb-item {
     color: #757575;
     &::before {

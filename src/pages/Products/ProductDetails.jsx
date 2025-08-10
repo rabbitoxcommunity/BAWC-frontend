@@ -2,11 +2,11 @@ import { allProducts } from "@/data/products";
 import React from "react";
 import { useParams } from "react-router-dom";
 import Details from "./Details";
-import Breadcumb from "./Breadcrumb";
 import MetaComponent from "@/components/MetaComponent";
+import ProductBreadcrumb from "./ProductBreadcrumb";
 const metadata = {
-  title: "Product Details || Vineta - Multipurpose Reactjs eCommerce Template",
-  description: "Vineta - Multipurpose Reactjs eCommerce Template",
+  title: "Product || Leading IT Product Supplier in GCC and Africa | BAIT AL WAHDA",
+  description: "BAWC || Leading IT Product Supplier in GCC and Africa | BAIT AL WAHDA",
 };
 export default function ProductDetails() {
   let params = useParams();
@@ -16,7 +16,7 @@ export default function ProductDetails() {
   return (
     <>
       <MetaComponent meta={metadata} />
-      <Breadcumb product={product} />
+      <ProductBreadcrumb product={product} />
       <Details product={product} />
     </>
   );

@@ -52,11 +52,11 @@ export default function ProductCard1({
           <span
             className={`price-new ${product?.oldPrice ? "text-primary" : ""} `}
           >
-            ${product?.price.toFixed(2)}
+            AED {product?.price.toFixed(2)}
           </span>{" "}
           {product?.oldPrice && (
             <span className="price-old text-dark">
-              ${product?.oldPrice.toFixed(2)}
+              AED {product?.oldPrice.toFixed(2)}
             </span>
           )}{" "}
         </p>

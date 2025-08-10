@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ProductHeading from "./ProductHeading";
-import StickyProducts from "./StickyProducts";
 import ProductSlider from "./ProductSlider";
 import ProductDescription from "./ProductDescription";
 export default function Details({ product }) {
@@ -49,7 +48,6 @@ export default function Details({ product }) {
                     </div>
                 </div>
             </div>
-            <StickyProducts />
         </section>
     );
 }

@@ -8,7 +8,6 @@ import {
   productMenuItems,
   shopPages,
 } from "@/data/menu";
-import { shopItems } from "@/data/blogs";
 import { useLocation } from "react-router-dom";
 import { categories } from "@/data/collections";
 

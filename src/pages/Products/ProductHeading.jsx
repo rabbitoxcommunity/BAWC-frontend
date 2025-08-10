@@ -5,9 +5,9 @@ export default function ProductHeading({
   inStock = true,
 }) {
   return (
-    <div className={`tf-product-heading ${inStock ? "" : "pb-0 border-0"}`}>
-      <span className="brand-product">KOTON</span>
-      <h5 className="product-name fw-medium">Linen Blend Pants</h5>
+    <div className={`tf-product-heading border-0 ${inStock ? "" : "pb-0 border-0"}`}>
+      <span className="brand-product">Laptop & PC's</span>
+      <h5 className="product-name fw-medium">Apple MacBook Air M4 | 34.54 cm (13.6 inch) | 16GB | 256GB | Sky Blue</h5>
       <div className="product-rate">
         <div className="list-star">
           <i className="icon icon-star" />
@@ -16,11 +16,10 @@ export default function ProductHeading({
           <i className="icon icon-star" />
           <i className="icon icon-star" />
         </div>
-        <span className="count-review">(5 reviews)</span>
       </div>
       <div className="product-price">
-        <div className="display-sm price-new price-on-sale">$60.00</div>
-        <div className="display-sm price-old">$80.00</div>
+        <div className="display-sm price-new price-on-sale">AED 60.00</div>
+        <div className="display-sm price-old">AED 80.00</div>
         <span className="badge-sale">20% Off</span>
       </div>
       {inStock ? (
@@ -66,21 +65,6 @@ export default function ProductHeading({
             This product is currently unavailable
           </button>
         </>
-      )}
-      {showProgress && (
-        <div className="product-progress-sale">
-          <div className="title-hurry-up">
-            <span className="text-primary fw-medium">HURRY UP!</span> Only{" "}
-            <span className="count">4</span> items left!
-          </div>
-          <div className="progress-sold">
-            <div
-              className="value"
-              style={{ width: "70%" }}
-              data-progress={70}
-            />
-          </div>
-        </div>
       )}
     </div>
   );

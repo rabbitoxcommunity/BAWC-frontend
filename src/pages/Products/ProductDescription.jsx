@@ -5,7 +5,7 @@ export default function ProductDescription() {
     return (
         <section className="flat-spacing pt-0">
             <div className="container">
-                <div className="widget-accordion wd-product-descriptions">
+                <div className="widget-accordion wd-product-descriptions border-0">
                     <div
                         className="accordion-title collapsed"
                         data-bs-target="#description"

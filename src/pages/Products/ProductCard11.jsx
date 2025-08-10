@@ -14,7 +14,7 @@ export default function ProductCard11({ product }) {
     <div
       className="card-product style-list"
       data-availability="In stock"
-      data-brand="Vineta"
+      data-brand="Rabbitox"
     >
       <div className="card-product-wrapper">
         <Link to={`/product-detail/${product.id}`} className="product-img">

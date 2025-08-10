@@ -10,9 +10,8 @@ import Breadcumb from "@/components/Breadcumb";
 import SubCollections3 from "@/components/SubCollections3";
 import ProductGrids from "./ProductGrids";
 const metadata = {
-  title:
-    "Shop Sub Collections 02 || Vineta - Multipurpose Reactjs eCommerce Template",
-  description: "Vineta - Multipurpose Reactjs eCommerce Template",
+  title: "Products || Leading IT Product Supplier in GCC and Africa | BAIT AL WAHDA",
+  description: "Leading IT Product Supplier in GCC and Africa | BAIT AL WAHDA",
 };
 export default function Products() {
       const breadCrumb = {

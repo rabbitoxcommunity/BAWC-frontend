@@ -5,8 +5,6 @@ export default function Marquee() {
         { img: "/img/brands/03-09.png", },
     { img: "/img/brands/03-10.png", },
     { img: "/img/brands/03-11.png", },
-
-    
     { img: "/img/brands/011-01.png", },
     { img: "/img/brands/01-01.png", },
     { img: "/img/brands/01-02.png", },

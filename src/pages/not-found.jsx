@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Page Not Found || Vineta - Multipurpose Reactjs eCommerce Template",
-  description: "Vineta - Multipurpose Reactjs eCommerce Template",
+  title: "Page Not Found || Rabbitox - Multipurpose Reactjs eCommerce Template",
+  description: "Rabbitox - Multipurpose Reactjs eCommerce Template",
 };
 export default function NotFoundPage() {
   return (

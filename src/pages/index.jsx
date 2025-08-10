@@ -21,14 +21,12 @@ export default function HomePage() {
       <div className="bg-surface-2 home-phonecase">
 
         <Hero />
-         <Marquee />
+        <Marquee />
         <Categories />
         <Products />
         <Collections />
         <Banner />
         <Features />
-        {/* <Products2 /> */}
-        {/* <Banner2 /> */}
         <Testimonials />
         <Features2 />
 

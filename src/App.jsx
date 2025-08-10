@@ -126,7 +126,7 @@ function App() {
         </Routes>
         <Footer2 />
         <MobileMenu />
-      <ScrollTop />
+      {/* <ScrollTop /> */}
       <ScrollTopBehaviour />
     </>
   );

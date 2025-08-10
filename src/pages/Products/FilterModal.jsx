@@ -1,11 +1,16 @@
 // "use client";
-import { brands, sizes } from "@/data/filterOptions";
 import React from "react";
 import Slider from "rc-slider";
 import { products1 } from "@/data/products";
 import { Link } from "react-router-dom";
 
 export default function FilterModal() {
+const brands = [
+  { name: "Rabbitox", count: 11 },
+  { name: "Zotac", count: 20 },
+  // Add more brands as needed
+];
+
 
   const allProps = {}
   return (

@@ -7,7 +7,7 @@ export default function Footer2() {
   const [success, setSuccess] = useState(true);
   const [showMessage, setShowMessage] = useState(false);
 
- const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
 
   const handleShowMessage = () => {
@@ -77,6 +77,14 @@ export default function Footer2() {
       id="footer"
       className="footer-default footer-style-2 radius-16 line"
     >
+      <div className="floating_btn">
+        <a target="_blank" href="https://wa.me/">
+          <div className="contact_icon">
+            <i className="icon icon-whatsapp my-float"></i>
+          </div>
+        </a>
+        <p className="text_icon">Talk to us?</p>
+      </div>
       <div className="container-4">
         <div className="footer-body">
           <div className="row">
@@ -211,7 +219,7 @@ export default function Footer2() {
               </a>
             </li>
           </ul>
-         <p>BAWC © {currentYear}. All Rights Reserved. Powered by <a href="https://www.instagram.com/rabbitoxcommunity/" target="_blank" style={{color:"#5cbc63"}}>Rabbitox Community</a></p>
+          <p>BAWC © {currentYear}. All Rights Reserved. Powered by <a href="https://www.instagram.com/rabbitoxcommunity/" target="_blank" style={{ color: "#5cbc63" }}>Rabbitox Community</a></p>
         </div>
       </div>
     </footer>

@@ -55,7 +55,7 @@ export default function Header() {
           </ul>
             </div>
             <div className="col-xl-2 col-md-4 col-6 text-center">
-              <Link to={`/home-electronic`} className="logo-header">
+              <Link to={`/`} className="logo-header">
                 <img
                   alt="logo"
                   className="logo"
@@ -65,7 +65,7 @@ export default function Header() {
                 />
               </Link>
             </div>
-            <div className="col-xl-5 col-md-4 col-3 wrapper-header-bottom">
+            <div className="col-xl-5 col-md-4 col-3 wrapper-header-bottom d-none d-xl-block">
               <div className="inner-right d-flex justify-content-end align-items-center">
                 <Link to={`/contact-us`} className="link fw-medium text-md">
                   Need Help?

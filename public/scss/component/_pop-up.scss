@@ -498,6 +498,21 @@
       margin-bottom: 32px;
     }
   }
+
+  .canvas-body{
+    .list-categories{
+      .cate-item{
+        text-transform: uppercase;
+        cursor: pointer;
+        &.active{
+          span{
+            color: var(--primary);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
 }
 
 .canvas-compare {

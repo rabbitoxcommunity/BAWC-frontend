@@ -1,14 +1,14 @@
 import React from "react";
 import ProductCard1 from "./ProductCard1";
-import { products1 } from "@/data/products";
 
 export default function GridProducts({
   cardStyleClass,
   tooltipDirection = "left",
+  products
 }) {
   return (
     <>
-      {products1?.map((product, i) => (
+      {products?.map((product, i) => (
         <ProductCard1
           key={i}
           product={product}

@@ -14,13 +14,13 @@ const metadata = {
   description: "Leading IT Product Supplier in GCC and Africa | BAIT AL WAHDA",
 };
 export default function Products() {
-      const breadCrumb = {
-        title: "Products",
-        links: [
-            { title: "Home", link: "/" },
-            { title: "Products", link: "/products" },
-        ],
-    }
+  const breadCrumb = {
+    title: "Products",
+    links: [
+      { title: "Home", link: "/" },
+      { title: "Products", link: "/products" },
+    ],
+  }
   return (
     <>
       <MetaComponent meta={metadata} />

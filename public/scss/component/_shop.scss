@@ -374,7 +374,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     }
 }
 .current-scrollbar {
-    max-height: 200px;
+    max-height: 400px;
     overflow-y: auto;
     margin-right: 5px;
     &::-webkit-scrollbar {
@@ -398,6 +398,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
             line-height: 20px;
             color: var(--dark);
             cursor: pointer;
+            text-transform: uppercase;
             // opacity: 0.2;
         }
         .tf-check:checked ~ .label {

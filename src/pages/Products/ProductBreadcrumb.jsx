@@ -13,12 +13,15 @@ export default function ProductBreadcrumb({ product }) {
               <div className="breadcrumb-item dot">
                 <span />
               </div>
-              <div className="breadcrumb-item"> Laptops & PC's
+              <div className="breadcrumb-item">{product?.category?.name}
               </div>
               <div className="breadcrumb-item dot">
                 <span />
               </div>
-              <div className="breadcrumb-item current"> Apple MacBook Air M4
+              <div className="breadcrumb-item current">
+                {product?.title?.length > 50
+                  ? product.title.substring(0, 50) + "..."
+                  : product?.title}
               </div>
             </div>
             <div className="breadcrumb-prev-next">

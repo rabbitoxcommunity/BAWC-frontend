@@ -5422,7 +5422,6 @@ const getMaxId = () => {
     return Math.max(maxId, product.id);
   }, 0);
 };
-console.log(getMaxId());
 export const products = [
   ...products1,
   ...products2,

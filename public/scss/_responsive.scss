@@ -3,6 +3,9 @@
 /* Media Queries
 -------------------------------------------------------------- */
 @media (min-width: 768px) and (max-width: 1200px) {
+  .slider-effect-fade .swiper-slide .fade-item.fade-item-2{
+    width: 100%;
+  }
   .flat-wrapper-lookbook {
     .image-lookbook {
       .pin-1 {
@@ -5667,7 +5670,14 @@
 
   .tf-group-filter {
     gap: 6px;
+
   }
+  .tf-btn-filter{
+    min-width: 90px;
+  }
+  .tf-group-filter > :last-child {
+        flex: 1 1 100%;      /* make the last item full width if you like */
+    }
 
   .brand-item {
     max-width: 200px;
@@ -5760,9 +5770,34 @@
       margin-top: 20px;
     }
   }
+
+  .card-product .card-product-wrapper{
+    min-height: 170px;
+  }
+  .card-product .product-img{
+    height: 170px;
+  }
+  .card-product .card-product-wrapper img{
+    object-fit: cover;
+  }
+  .canvas-mb .mb-body{
+    padding-bottom: 80px;
+  }
 }
 
 @media (max-width: 575px) {
+
+
+  .product-thumbs-slider{
+.swiper-vertical>.swiper-wrapper{
+display: none;
+}
+  }
+
+
+  .tf-control-layout{
+    display: none;
+  }
   .tf-main-success .ship-address-item {
     margin-bottom: 24px;
 

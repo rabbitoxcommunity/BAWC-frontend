@@ -78,7 +78,13 @@ export default function Footer2() {
       className="footer-default footer-style-2 radius-16 line"
     >
       <div className="floating_btn">
-        <a target="_blank" href="https://wa.me/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={`https://wa.me/971564154420?text=${encodeURIComponent(
+            "Hello, I am interested in your products. Can you please share more details?"
+          )}`}
+        >
           <div className="contact_icon">
             <i className="icon icon-whatsapp my-float"></i>
           </div>
@@ -139,11 +145,11 @@ export default function Footer2() {
                     <li>
                       <Link to={`/privacy-policy`}>Privacy Policies</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to={`/return-and-refund`}>
                         Returns &amp; Refunds
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

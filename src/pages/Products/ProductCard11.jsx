@@ -16,52 +16,43 @@ export default function ProductCard11({ product }) {
       data-availability="In stock"
       data-brand="Rabbitox"
     >
-      <div className="card-product-wrapper">
-        <Link to={`/product-detail/${product.id}`} className="product-img">
+  <div className={`card-product-wrapper ${ratioClass} `}>
+        <Link to={`/product-detail/${product?._id}`} className="product-img">
           <img
             className="img-product lazyload"
             alt="image-product"
-            src={currentImage}
-            width={684}
-            height={972}
+            src={API_IMAGE_BASE_URL+currentImage}
+            width={513}
+            height={500}
           />
           <img
             className="img-hover lazyload"
+            src={API_IMAGE_BASE_URL+ product?.images?.[1] ? API_IMAGE_BASE_URL+ product?.images?.[1] : API_IMAGE_BASE_URL+ product?.images?.[0]}
             alt="image-product"
-            src={product.imgHover}
-            width={684}
-            height={972}
+            width={513}
+            height={500}
           />
         </Link>
       </div>
-      <div className="card-product-info">
-        <div className="info-list">
-          <Link
-            to={`/product-detail/${product.id}`}
-            className="name-product link fw-medium text-md"
+      <div className={`card-product-info ${textCenter ? "text-center" : ""} `}>
+        <Link
+          to={`/product-detail/${product?._id}`}
+          className="name-product link fw-medium text-md"
+        >
+          {product?.title}
+        </Link>
+        <p className="price-wrap fw-medium">
+          <span
+            className={`price-new ${product?.actualPrice ? "text-primary" : ""} `}
           >
-            {product.title}
-          </Link>
-          <p className="price-wrap fw-medium text-md">
-            {" "}
-            <span
-              className={`price-new ${product.oldPrice ? "text-primary" : ""} `}
-            >
-              ${product.price?.toFixed(2)}
-            </span>{" "}
-            {product.oldPrice && (
-              <span className="price-old text-dark">
-                ${product.oldPrice.toFixed(2)}
-              </span>
-            )}
-          </p>
-          <p className="decs text-sm text-main text-line-clamp-2">
-            Product Specifications Care for fiber: 30% more recycled polyester.
-            We label garments manufactured using environmentally friendly
-            technologies and raw materials with the Join Life label.
-          </p>
-        </div>
-
+            AED {product?.discountPrice?.toFixed(2)}
+          </span>{" "}
+          {product?.actualPrice && (
+            <span className="price-old text-dark">
+              AED {product?.actualPrice?.toFixed(2)}
+            </span>
+          )}{" "}
+        </p>
       </div>
     </div>
   );

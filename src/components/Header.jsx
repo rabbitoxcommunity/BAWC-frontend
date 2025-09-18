@@ -22,37 +22,37 @@ export default function Header() {
               </a>
             </div>
             <div className="col-xl-5 d-none d-xl-block">
-      <ul className="tf-social-icon style-large">
-            <li>
-              <a
-                href="https://www.facebook.com/"
-                className="social-item social-facebook"
-              >
-                <i className="icon icon-fb" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                className="social-item social-instagram"
-              >
-                <i className="icon icon-instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/" className="social-item social-x">
-                <i className="icon icon-x" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.snapchat.com/"
-                className="social-item social-snapchat"
-              >
-                <i className="icon icon-snapchat" />
-              </a>
-            </li>
-          </ul>
+              <ul className="tf-social-icon style-large">
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    className="social-item social-facebook"
+                  >
+                    <i className="icon icon-fb" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    className="social-item social-instagram"
+                  >
+                    <i className="icon icon-instagram" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://x.com/" className="social-item social-x">
+                    <i className="icon icon-x" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.snapchat.com/"
+                    className="social-item social-snapchat"
+                  >
+                    <i className="icon icon-snapchat" />
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className="col-xl-2 col-md-4 col-6 text-center">
               <Link to={`/`} className="logo-header">
@@ -70,7 +70,7 @@ export default function Header() {
                 <Link to={`/contact-us`} className="link fw-medium text-md">
                   Need Help?
                 </Link>
-                <a href="tel:123456789" className="call-us text-md fw-medium">
+                <a href="tel:+971564154420" className="call-us text-md fw-medium">
                   Call Us Now <i className="icon icon-arrow1-top-left" />
                 </a>
               </div>

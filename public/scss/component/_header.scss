@@ -216,6 +216,7 @@
             }
 
             &.active {
+                color: var(--primary);
                 .menu-link-text.active {
                     color: var(--primary);
                 }
@@ -860,6 +861,10 @@
             align-items: center;
             font-weight: 400;
             text-align: start;
+            text-transform: uppercase;
+            &.menuActive{
+                color: var(--primary);
+            }
 
             .demo-label {
                 font-size: 10px;
@@ -1408,8 +1413,9 @@ header {
     }
 
     .sub-nav-menu {
-        padding-left: 10px;
+        padding: 30px;
         margin-bottom: 15px;
+        background-color: #f3f3f3;
     }
 
     .sub-menu-level-2 {

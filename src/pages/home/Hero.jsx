@@ -1,11 +1,28 @@
 "use client";
 import { slides2 } from "@/data/heroSlides";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
+import { getBanners } from "@/redux/actionCreator";
+import { useDispatch } from "react-redux";
+import { API_IMAGE_BASE_URL } from "@/config/configuration";
 
 export default function Hero() {
+  const [banners, setBanners] = useState([])
+
+  const dispatch = useDispatch()
+
+  const fetchBanners = () => {
+    dispatch(getBanners((res) => {
+      setBanners(res);
+    }));
+  }
+
+  useEffect(() => {
+    fetchBanners()
+  }, []);
+
   return (
     <div className="tf-slideshow slider-electronic slider-default">
       <Swiper
@@ -21,7 +38,7 @@ export default function Hero() {
         }}
         dir="ltr"
       >
-        {slides2.map((slide, index) => (
+        {banners?.map((slide, index) => (
           <SwiperSlide
             key={index}
             className={`swiper-slide${slide.reverse ? " reverse-slide" : ""}`}
@@ -29,11 +46,11 @@ export default function Hero() {
             <div className={`slider-wrap ${slide.bgType}`}>
               <div className="image">
                 <img
-                  src={slide.imgSrc}
+                  src={API_IMAGE_BASE_URL + slide.image}
                   alt="slider"
                   className="lazyload"
-                  width={slide.imgWidth}
-                  height={slide.imgHeight}
+                // width={slide.imgWidth}
+                // height={slide.imgHeight}
                 />
               </div>
               <div className="box-content">
@@ -41,7 +58,7 @@ export default function Hero() {
                   <div className="row">
                     <div
                       className={
-                        slide.reverse
+                        slide?.reverse
                           ? "offset-lg-8 col-lg-4 col-sm-6 offset-6 col-12"
                           : "col-lg-12 col-12 col-sm-6"
                       }
@@ -53,20 +70,25 @@ export default function Hero() {
                           </p>
                           <h2
                             className={`heading fw-medium fade-item fade-item-2 ${slide?.text_color == 'dark' ? "text-dark" : "text-white"}`}
-                            dangerouslySetInnerHTML={{
-                              __html: slide.heading,
-                            }}
-                          />
-                        </div>
-                        <div className="box-btn-slider fade-item fade-item-3">
-                          <Link
-                            to={`/shop-default`}
-                            className="tf-btn bg-primary animate-btn"
+
                           >
-                            Shop Now
-                            <i className="icon icon-arr-right" />
-                          </Link>
+                            {slide?.mainTitle}
+                          </h2>
                         </div>
+                        {
+                          slide?.link &&
+                          <div className="box-btn-slider fade-item fade-item-3">
+                            <Link
+                              to={`${slide?.link}`}
+                              target="_blank"
+                              className="tf-btn bg-primary animate-btn"
+                            >
+                              Shop Now
+                              <i className="icon icon-arr-right" />
+                            </Link>
+                          </div>
+                        }
+
                       </div>
                     </div>
                   </div>

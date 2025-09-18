@@ -1,23 +1,30 @@
 import { allProducts } from "@/data/products";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Details from "./Details";
 import MetaComponent from "@/components/MetaComponent";
 import ProductBreadcrumb from "./ProductBreadcrumb";
+import { useDispatch } from "react-redux";
+import { getProductById } from "@/redux/actionCreator";
 const metadata = {
   title: "Product || Leading IT Product Supplier in GCC and Africa | BAIT AL WAHDA",
   description: "BAWC || Leading IT Product Supplier in GCC and Africa | BAIT AL WAHDA",
 };
 export default function ProductDetails() {
-  let params = useParams();
-  const id = params.id;
+  const [detail, setDetail] = useState({})
+  const dispatch = useDispatch()
+  const { id } = useParams()
 
-  const product = allProducts.filter((p) => p.id == id)[0] || allProducts[0];
+  useEffect(() => {
+    dispatch(getProductById(id, (res) => {
+      setDetail(res);
+    }))
+  }, [])
   return (
     <>
       <MetaComponent meta={metadata} />
-      <ProductBreadcrumb product={product} />
-      <Details product={product} />
+      <ProductBreadcrumb product={detail} />
+      <Details detail={detail} />
     </>
   );
 }

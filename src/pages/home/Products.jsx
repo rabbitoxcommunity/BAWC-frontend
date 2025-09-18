@@ -1,11 +1,30 @@
 "use client";
 import ProductCard6 from "@/components/ProductCard6";
 import { products13 } from "@/data/products";
-import React from "react";
+import { getProducts } from "@/redux/actionCreator";
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Products() {
+  const [products, setProducts] = useState([])
+  const featuredProducts = products?.filter(p => p?.isFeatured);
+
+
+  const dispatch = useDispatch()
+
+  const fetchProducts = (reset = false) => {
+    dispatch(getProducts({}, (res) => {
+      setProducts(res?.data);
+    }));
+  }
+
+  useEffect(() => {
+    fetchProducts()
+  }, [])
+
+
   return (
     <section className="flat-spacing-2 bg-white mx_40 radius-16">
       <div className="container-3">
@@ -41,8 +60,8 @@ export default function Products() {
           }}
           modules={[Pagination, Navigation]}
         >
-          {products13.map((product) => (
-            <SwiperSlide className="swiper-slide" key={product.id}>
+          {featuredProducts?.map((product) => (
+            <SwiperSlide className="swiper-slide" key={product._id}>
               <ProductCard6 product={product} />
             </SwiperSlide>
           ))}

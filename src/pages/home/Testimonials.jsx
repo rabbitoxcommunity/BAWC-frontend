@@ -1,5 +1,5 @@
 "use client";
-import { testimonials7 } from "@/data/testimonials";
+import { testimonials, testimonials7 } from "@/data/testimonials";
 import React from "react";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -29,14 +29,14 @@ export default function Testimonials() {
           }}
           modules={[Pagination]}
         >
-          {testimonials7.map((item, index) => (
+          {testimonials.map((item, index) => (
             <SwiperSlide className="swiper-slide" key={index}>
               <div className="wg-testimonial">
                 <div className="content">
                   <div className="content-top">
                     <div className="box-author">
                       <p className="name-author text-sm fw-medium">
-                        {item.author}
+                        {item.name}
                       </p>
                       <div className="box-verified text-main">
                         <i className="icon-verifi" />
@@ -53,7 +53,7 @@ export default function Testimonials() {
                     </p>
                   </div>
                   <span className="br-line d-block" />
-                  <div className="box-avt">
+                  {/* <div className="box-avt">
                     <div className="avatar">
                       <img
                         alt="author"
@@ -75,7 +75,7 @@ export default function Testimonials() {
                         ${item.price}.00
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </SwiperSlide>

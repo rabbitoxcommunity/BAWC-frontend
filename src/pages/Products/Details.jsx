@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import ProductHeading from "./ProductHeading";
 import ProductSlider from "./ProductSlider";
 import ProductDescription from "./ProductDescription";
-export default function Details({ product }) {
-    const [quantity, setQuantity] = useState(1);
+export default function Details({ detail }) {
     const [activeColor, setActiveColor] = useState("Black");
+
+
     return (
         <section className="flat-single-product">
             <div className="tf-main-product section-image-zoom">
@@ -18,7 +18,7 @@ export default function Details({ product }) {
                                 <div className="product-thumbs-slider">
                                     <ProductSlider
                                         activeColor={activeColor}
-                                        firstItem={product.imgSrc}
+                                        slideItems={detail}
                                         setActiveColor={setActiveColor}
                                     />
                                 </div>
@@ -30,17 +30,10 @@ export default function Details({ product }) {
                             <div className="tf-zoom-main" />
                             <div className="tf-product-info-wrap position-relative">
                                 <div className="tf-product-info-list other-image-zoom">
-                                    <ProductHeading product={product} />
-                                    <div className="tf-product-total-quantity">
-                                        <a
-                                            href="#"
-                                            className="tf-btn btn-primary w-100 animate-btn"
-                                        >
-                                           <i class="icon icon-whatsapp"></i> Buy it now
-                                        </a>
-                                    </div>
+                                    <ProductHeading product={detail} />
+                                 
 
-                                    <ProductDescription />
+                                    <ProductDescription product={detail} />
                                 </div>
                             </div>
                         </div>

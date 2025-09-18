@@ -1,42 +1,42 @@
 export const testimonials = [
   {
-    name: "Emily T.",
+    name: "Ahmed K.",
     review:
-      "The quality of the clothes exceeded my expectations. Every piece feels premium, and the designs are so trendy. I'm obsessed with my new wardrobe additions!",
-    product: "Crop T-shirt",
-    image: "/images/testimonial/author/author-fs1.jpg",
+      "Ordered a 27-inch 4K monitor and it arrived in Dubai the very next day. The picture quality is incredible—perfect for my design work.",
+    product: "UltraView 27\" 4K Monitor",
+    image: "/images/testimonial/author/author-tech1.jpg",
     delay: "",
   },
   {
-    name: "Jessica M.",
+    name: "Fatima A.",
     review:
-      "I love the dress I purchased! The fabric is so soft, and the fit is perfect. I’ve gotten so many compliments on it. Will definitely shop here again!",
-    product: "Short Sleeve Sweat",
-    image: "/images/testimonial/author/author-fs2.jpg",
+      "The mechanical keyboard and gaming mouse combo is top-notch. Feels premium and makes my long office hours in Abu Dhabi much easier.",
+    product: "Mechanical Keyboard & RGB Mouse Combo",
+    image: "/images/testimonial/author/author-tech2.jpg",
     delay: "0.1s",
   },
   {
-    name: "Lisa P.",
+    name: "Rashid M.",
     review:
-      "I was pleasantly surprised by how fast my order arrived. The customer service team was helpful and responsive. Great shopping experience!",
-    product: "Long Sleeve Basic T-Shirt",
-    image: "/images/testimonial/author/author-fs3.jpg",
+      "Picked up a 1TB portable SSD for video editing. Super-fast transfers and great support from the customer team in Sharjah.",
+    product: "1TB Portable SSD",
+    image: "/images/testimonial/author/author-tech3.jpg",
     delay: "0.2s",
   },
   {
-    name: "Emily T.",
+    name: "Leila H.",
     review:
-      "The quality of the clothes exceeded my expectations. Every piece feels premium, and the designs are so trendy. I'm obsessed with my new wardrobe additions!",
-    product: "Crop T-shirt",
-    image: "/images/testimonial/author/author-fs4.jpg",
+      "Bought a curved 32-inch gaming monitor for my son. Delivery to Al Ain was quick and the visuals are amazing—worth every dirham!",
+    product: "Curved Gaming Monitor 32\"",
+    image: "/images/testimonial/author/author-tech4.jpg",
     delay: "",
   },
   {
-    name: "Jessica M.",
+    name: "Omar S.",
     review:
-      "I love the dress I purchased! The fabric is so soft, and the fit is perfect. I’ve gotten so many compliments on it. Will definitely shop here again!",
-    product: "Loose Fit Tee",
-    image: "/images/testimonial/author/author-fs5.jpg",
+      "Needed a reliable webcam for remote meetings. The 1080p camera I ordered works perfectly and arrived in Ajman within 24 hours.",
+    product: "Full HD 1080p Webcam",
+    image: "/images/testimonial/author/author-tech5.jpg",
     delay: "",
   },
 ];

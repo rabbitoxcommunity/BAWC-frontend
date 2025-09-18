@@ -1,16 +1,43 @@
 "use client";
-import { categories } from "@/data/collections";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { getCategories } from "@/redux/actionCreator";
+import { API_IMAGE_BASE_URL } from "@/config/configuration";
+import { updateRedux } from "@/redux/commonReducer";
 
 export default function Categories() {
+  const [categories, setCategories] = useState([])
+
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+
+  const fetchCategories = () => {
+    dispatch(getCategories((res) => {
+      setCategories(res);
+    }));
+  }
+
+  useEffect(() => {
+    fetchCategories()
+  }, []);
+
+  const handleCategory = (id) => {
+    dispatch(
+      updateRedux({
+        key: "filters",
+        value: { category: id },
+      })
+    );
+    navigate("/products");
+  };
   return (
     <section className="flat-spacing-3">
       <div className="container">
         <div className="flat-title text-start wow fadeInUp">
-          <h4 className="title">Categories</h4>
+          <h4 className="title">Top Categories</h4>
         </div>
         <div className="wow fadeInUp">
           <div className="fl-control-sw pos1">
@@ -58,28 +85,26 @@ export default function Categories() {
               }}
               modules={[Pagination, Navigation]}
             >
-              {categories.map((category, index) => (
-                <SwiperSlide className="swiper-slide" key={index}>
-                  <div className="wg-cls style-square hover-img">
-                    <Link
-                      to={`/shop-sub-collection`}
+              {categories?.map((category, index) => (
+                <SwiperSlide className="swiper-slide cursor-pointer" key={index}>
+                  <div className="wg-cls style-square hover-img" onClick={()=>handleCategory(category?._id)}>
+                    <div
                       className="image img-style d-block"
                     >
                       <img
-                        src={category.imgSrc}
-                        alt={category.alt}
+                        src={API_IMAGE_BASE_URL + category?.image}
                         className="lazyload"
                         width={440}
                         height={440}
                       />
-                    </Link>
+                    </div>
                     <div className="cls-content text-center">
-                      <Link
-                        to={`/shop-sub-collection`}
-                        className="link text-md fw-medium"
+                      <div
+                        className="link text-md fw-medium uppercase"
+                        style={{textTransform:'capitalize'}}
                       >
-                        {category.title}
-                      </Link>
+                        {category?.name}
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>

@@ -16,6 +16,9 @@ import About from "./pages/About";
 import Products from "./pages/Products/Products";
 import ProductDetails from "./pages/Products/ProductDetails";
 import Contact from "./pages/Contact";
+import './styles.scss'
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
 
 function App() {
   const { pathname } = useLocation();
@@ -123,6 +126,8 @@ function App() {
           <Route path="products" element={<Products />} />
           <Route path="product-detail/:id" element={<ProductDetails />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="term-and-condition" element={<Terms />} />
+          <Route path="privacy-policy" element={<Privacy />} />
         </Routes>
         <Footer2 />
         <MobileMenu />

@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 import { getBanners } from "@/redux/actionCreator";
 import { useDispatch } from "react-redux";
-import { API_IMAGE_BASE_URL } from "@/config/configuration";
 
 export default function Hero() {
   const [banners, setBanners] = useState([])
@@ -46,7 +45,7 @@ export default function Hero() {
             <div className={`slider-wrap ${slide.bgType}`}>
               <div className="image">
                 <img
-                  src={API_IMAGE_BASE_URL + slide.image}
+                  src={slide.image}
                   alt="slider"
                   className="lazyload"
                 // width={slide.imgWidth}

@@ -1,11 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { getCategories } from "@/redux/actionCreator";
-import { API_IMAGE_BASE_URL } from "@/config/configuration";
 import { updateRedux } from "@/redux/commonReducer";
 
 export default function Categories() {
@@ -49,8 +48,9 @@ export default function Categories() {
                 spaceBetween: 12,
                 speed: 800,
                 observer: true,
+                autoplay : true,
                 observeParents: true,
-                slidesPerGroup: 2,
+                slidesPerGroup: 1,
                 navigation: {
                   clickable: true,
                   nextEl: ".nav-next-categories",
@@ -69,21 +69,21 @@ export default function Categories() {
                   768: {
                     slidesPerView: 4,
                     spaceBetween: 12,
-                    slidesPerGroup: 4,
+                    slidesPerGroup: 1,
                   },
                   992: {
                     slidesPerView: 5,
                     spaceBetween: 24,
-                    slidesPerGroup: 4,
+                    slidesPerGroup: 1,
                   },
                   1200: {
                     slidesPerView: 6,
                     spaceBetween: 24,
-                    slidesPerGroup: 4,
+                    slidesPerGroup: 1,
                   },
                 },
               }}
-              modules={[Pagination, Navigation]}
+              modules={[Pagination, Navigation, Autoplay]}
             >
               {categories?.map((category, index) => (
                 <SwiperSlide className="swiper-slide cursor-pointer" key={index}>
@@ -92,7 +92,7 @@ export default function Categories() {
                       className="image img-style d-block"
                     >
                       <img
-                        src={API_IMAGE_BASE_URL + category?.image}
+                        src={category?.image}
                         className="lazyload"
                         width={440}
                         height={440}

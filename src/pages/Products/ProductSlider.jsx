@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import { Navigation, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
-import { API_IMAGE_BASE_URL } from "@/config/configuration";
 
 export default function ProductSlider({ activeColor = "Black", setActiveColor = () => {}, slideItems, }) {
   const items = slideItems?.images;
@@ -54,9 +53,9 @@ export default function ProductSlider({ activeColor = "Black", setActiveColor = 
             <div className="item">
               <img
                 className="lazyload"
-                data-src={API_IMAGE_BASE_URL + ele}
+                data-src={ ele}
                 alt="img-product"
-                 src={API_IMAGE_BASE_URL + ele}
+                 src={ ele}
                 width={828}
                 height={1241}
               />
@@ -85,7 +84,7 @@ export default function ProductSlider({ activeColor = "Black", setActiveColor = 
               data-size="small"
             >
               <a
-                href={API_IMAGE_BASE_URL + ele}
+                href={ele}
                 target="_blank"
                 className="item"
                 data-pswp-width="552px"
@@ -93,10 +92,10 @@ export default function ProductSlider({ activeColor = "Black", setActiveColor = 
               >
                 <img
                   className="tf-image-zoom lazyload"
-                  data-zoom={API_IMAGE_BASE_URL + ele}
-                  data-src={API_IMAGE_BASE_URL + ele}
+                  data-zoom={ele}
+                  data-src={ele}
                   alt="img-product"
-                  src={API_IMAGE_BASE_URL + ele}
+                  src={ele}
                   width={828}
                   height={1241}
                 />

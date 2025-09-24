@@ -1,5 +1,5 @@
 "use client";
-import { API_IMAGE_BASE_URL } from "@/config/configuration";
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -27,13 +27,13 @@ export default function ProductCard1({
           <img
             className="img-product lazyload"
             alt="image-product"
-            src={API_IMAGE_BASE_URL + currentImage}
+            src={currentImage}
             width={513}
             height={500}
           />
           <img
             className="img-hover lazyload"
-            src={product?.images?.length === 1 ? API_IMAGE_BASE_URL + currentImage : API_IMAGE_BASE_URL + product?.images?.[1]}
+            src={product?.images?.length === 1 ?  currentImage :  product?.images?.[1]}
             alt="image-product"
             width={513}
             height={500}

@@ -99,104 +99,120 @@ export default function ProductGrids({
     <>
       <section className={parentClass}>
         <div className={fullWidth ? "container-full" : "container"}>
-          <div className="tf-shop-control">
-            <div className="tf-group-filter">
-              <a
-                href="#filterShop"
-                data-bs-toggle="offcanvas"
-                aria-controls="filterShop"
-                className="tf-btn-filter"
-              >
-                <span className="icon icon-filter" />
-                <span className="text">Filter</span>
-              </a>
-              <div className="tf-dropdown-sort" data-bs-toggle="dropdown">
-                <div className="btn-select">
-                  <span className="text-sort-value">{selectedLabel}</span>
-                  <span className="icon icon-arr-down" />
-                </div>
-                <div className="dropdown-menu">
-                  {sortOptions.map((elm, i) => (
-                    <div
-                      key={i}
-                      className={`select-item ${selectedSort === elm.value ? "active" : ""
-                        }`}
-                      onClick={() => handleSortChange(elm.value)}
-                    >
-                      <span className="text-value-item">{elm.label}</span>
+          {
+            loading ? <div className="main_loader">
+              <div className="page_loader"></div>
+            </div> :
+
+              (
+                <>
+
+
+                  <div className="tf-shop-control">
+                    <div className="tf-group-filter">
+                      <a
+                        href="#filterShop"
+                        data-bs-toggle="offcanvas"
+                        aria-controls="filterShop"
+                        className="tf-btn-filter"
+                      >
+                        <span className="icon icon-filter" />
+                        <span className="text">Filter</span>
+                      </a>
+                      <div className="tf-dropdown-sort" data-bs-toggle="dropdown">
+                        <div className="btn-select">
+                          <span className="text-sort-value">{selectedLabel}</span>
+                          <span className="icon icon-arr-down" />
+                        </div>
+                        <div className="dropdown-menu">
+                          {sortOptions.map((elm, i) => (
+                            <div
+                              key={i}
+                              className={`select-item ${selectedSort === elm.value ? "active" : ""
+                                }`}
+                              onClick={() => handleSortChange(elm.value)}
+                            >
+                              <span className="text-value-item">{elm.label}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      {hasFilters && (
+                        <button
+                          id="remove-all"
+                          className="remove-all-filters"
+                          onClick={handleClearFilters}
+                        >
+                          <i className="icon icon-close"></i> Clear all filter
+                        </button>
+                      )}
+
                     </div>
-                  ))}
-                </div>
-              </div>
-              {hasFilters && (
-                <button
-                  id="remove-all"
-                  className="remove-all-filters"
-                  onClick={handleClearFilters}
-                >
-                  <i className="icon icon-close"></i> Clear all filter
-                </button>
-              )}
+                    <ul className="tf-control-layout">
+                      <LayoutHandler
+                        setActiveLayout={setActiveLayout}
+                        activeLayout={activeLayout}
+                      />
+                    </ul>
+                  </div>
 
-            </div>
-            <ul className="tf-control-layout">
-              <LayoutHandler
-                setActiveLayout={setActiveLayout}
-                activeLayout={activeLayout}
-              />
-            </ul>
-          </div>
-          <div className="wrapper-control-shop">
-            {
-              products?.length > 0 ?
-                <div
-                  className={`wrapper-shop tf-grid-layout tf-col-${activeLayout}`}
-                  id="gridLayout"
-                >
+                  <div className="wrapper-control-shop">
+                    {
+                      products?.length > 0 || loading ?
+                        <div
+                          className={`wrapper-shop tf-grid-layout tf-col-${activeLayout}`}
+                          id="gridLayout"
+                        >
 
-                  <GridProducts
-                    cardStyleClass={cardStyleClass}
-                    tooltipDirection={tooltipDirection}
-                    products={products}
-                  />
+                          <GridProducts
+                            cardStyleClass={cardStyleClass}
+                            tooltipDirection={tooltipDirection}
+                            products={products}
+                          />
 
 
 
-                </div> : <NoData />
+                        </div> : <NoData />
 
-            }
+                    }
 
-            {/* Pagination */}
-            {page < totalPages && (
-              <div className="text-center mt-4 flex justify-center col-span-4">
-                {/* <button
+                    {/* Pagination */}
+                    {page < totalPages && (
+                      <div className="text-center mt-4 flex justify-center col-span-4">
+                        {/* <button
 
                   className="btn-primary"
                 >
                   {loading ? "Loading..." : "Load More"}
                 </button> */}
-                <button
-                  className="btn-primary"
-                  onClick={() => fetchProducts(page + 1)}
-                  disabled={loading}
-                >
-                  {loading ? (
-                    <span className="flex items-center gap-2">
-                      Loading..
-                      <div
-                        className="spinner-grow"
-                        style={{ height: "10px", width: "10px", marginLeft:"10px" }}
-                        role="status"
-                      ></div>
-                    </span>
-                  ) : (
-                    "Load More"
-                  )}
-                </button>
-              </div>
-            )}
+                        <button
+                          className="btn-primary"
+                          onClick={() => fetchProducts(page + 1)}
+                          disabled={loading}
+                        >
+                          {loading ? (
+                            <span className="flex items-center gap-2">
+                              Loading..
+                              <div
+                                className="spinner-grow"
+                                style={{ height: "10px", width: "10px", marginLeft: "10px" }}
+                                role="status"
+                              ></div>
+                            </span>
+                          ) : (
+                            "Load More"
+                          )}
+                        </button>
+                      </div>
+                    )}
 
-          </div>
+                  </div>
+                </>
+              )
+
+          }
+
+          
         </div>
       </section>
       <FilterModal />

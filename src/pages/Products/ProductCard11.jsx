@@ -21,13 +21,13 @@ export default function ProductCard11({ product }) {
           <img
             className="img-product lazyload"
             alt="image-product"
-            src={API_IMAGE_BASE_URL+currentImage}
+            src={currentImage}
             width={513}
             height={500}
           />
           <img
             className="img-hover lazyload"
-            src={API_IMAGE_BASE_URL+ product?.images?.[1] ? API_IMAGE_BASE_URL+ product?.images?.[1] : API_IMAGE_BASE_URL+ product?.images?.[0]}
+            src={product?.images?.[1] ?  product?.images?.[1] : product?.images?.[0]}
             alt="image-product"
             width={513}
             height={500}

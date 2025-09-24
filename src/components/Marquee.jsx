@@ -1,4 +1,3 @@
-import { API_IMAGE_BASE_URL } from "@/config/configuration";
 import { getBrands } from "@/redux/actionCreator";
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
@@ -29,7 +28,7 @@ export default function MarqueeLogo() {
             return (
               <div className="marquee_item" key={i}>
                 <div className="marquee_child">
-                  <img src={API_IMAGE_BASE_URL + ele?.image} alt="" />
+                  <img src={ele?.image} alt="" />
                 </div>
                 <div className="marquee_child">
                   <i className="icon-flash-star" />

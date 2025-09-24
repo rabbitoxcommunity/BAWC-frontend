@@ -4,7 +4,6 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useDispatch, useSelector } from "react-redux";
 import { getCategories } from "@/redux/actionCreator";
-import { API_IMAGE_BASE_URL } from "@/config/configuration";
 import { updateRedux } from "@/redux/commonReducer";
 
 export default function SubCollections3({ parentClass = "flat-spacing-24" }) {
@@ -67,6 +66,18 @@ export default function SubCollections3({ parentClass = "flat-spacing-24" }) {
           }}
           modules={[Pagination, Navigation]}
         >
+                    <SwiperSlide className="swiper-slide" onClick={clearFilters}>
+            <div className="wg-cls style-circle-md">
+              <div className="image shop-all">
+                <img src="/img/logo.avif" alt="" />
+              </div>
+              <div className="cls-content text-center">
+                <div className="link text-sm fw-medium">
+                  Shop All
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
           {categories?.map((slide, i) => (
             <SwiperSlide
               className={`swiper-slide`}
@@ -74,7 +85,7 @@ export default function SubCollections3({ parentClass = "flat-spacing-24" }) {
               <div className="wg-cls style-circle-md hover-img">
                 <div className={`image img-style d-block ${selectedCategory === slide._id ? "active" : ""}`}>
                   <img
-                    src={API_IMAGE_BASE_URL + slide.image}
+                    src={slide.image}
                     className="lazyload"
                     width={198}
                     height={198}
@@ -88,19 +99,7 @@ export default function SubCollections3({ parentClass = "flat-spacing-24" }) {
               </div>
             </SwiperSlide>
           ))}
-          {/* item 8 */}
-          <SwiperSlide className="swiper-slide" onClick={clearFilters}>
-            <div className="wg-cls style-circle-md">
-              <div className="image shop-all">
-                <img src="/img/logo.avif" alt="" />
-              </div>
-              <div className="cls-content text-center">
-                <div className="link text-sm fw-medium">
-                  Shop All
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+
 
           <div className="d-flex d-xl-none sw-dot-default sw-pagination-categories justify-content-center" />
         </Swiper>

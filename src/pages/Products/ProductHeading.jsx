@@ -55,7 +55,7 @@ export default function ProductHeading({
         </div>
       </div>
       <div className="brand">
-        <img src={API_IMAGE_BASE_URL + product?.brand?.image} alt="" />
+        <img src={product?.brand?.image} alt="" />
         {/* <div className="title">
           <h5>{product?.brand?.name}</h5>
           <p>Brand</p>

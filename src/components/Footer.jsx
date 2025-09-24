@@ -205,23 +205,15 @@ export default function Footer2() {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/bait_al_wahda_computers/"
                 className="social-item social-instagram"
               >
                 <i className="icon icon-instagram" />
               </a>
             </li>
             <li>
-              <a href="https://x.com/" className="social-item social-x">
-                <i className="icon icon-x" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.snapchat.com/"
-                className="social-item social-snapchat"
-              >
-                <i className="icon icon-snapchat" />
+              <a href={`https://wa.me/971564154420?text=Hello`} target="_blank" className="social-item social-x">
+                <i className="icon icon-whatsapp" />
               </a>
             </li>
           </ul>

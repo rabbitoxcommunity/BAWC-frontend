@@ -72,11 +72,11 @@ export default function Hero() {
                     >
                       <div className="content-slider">
                         <div className="box-title-slider">
-                          <p className={`sub text-md fw-medium fade-item fade-item-1 ${slide?.text_color == 'dark' ? "text-dark" : "text-white"}`}>
+                          <p className={`sub text-md fw-medium fade-item fade-item-1 ${slide?.text_color == 'dark' ? "text-dark" : "text-dark"}`}>
                             {slide.subTitle}
                           </p>
                           <h2
-                            className={`heading fw-medium fade-item fade-item-2 ${slide?.text_color == 'dark' ? "text-dark" : "text-white"}`}
+                            className={`heading fw-medium fade-item fade-item-2 ${slide?.text_color == 'dark' ? "text-dark" : "text-dark"}`}
 
                           >
                             {slide?.mainTitle}

@@ -79,7 +79,7 @@ export default function MobileMenu() {
                 <div id="dropdown-menu-home" className="collapse">
                   <ul className="sub-nav-menu">
                     {categories.map((link, i) => (
-                      <li key={i} className={`sub-nav-link text-uppercase ${selectedCategory === link?._id ? "menuActive" : ""}`} onClick={() => handleCategory(link?._id)}>
+                      <li key={i} data-bs-dismiss="offcanvas" aria-label="Close" className={`sub-nav-link text-uppercase ${selectedCategory === link?._id ? "menuActive" : ""}`} onClick={() => handleCategory(link?._id)}>
                         {link.name}
                       </li>
                     ))}

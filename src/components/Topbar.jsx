@@ -2,17 +2,18 @@ import React from "react";
 
 export default function Topbar() {
 
-  const topbarContent = [
-    { title: "Limited-Time Offer – Don’t Miss Out!" },
-    { title: "Lifetime Warranty on Select Products" },
-    { title: "Extended Returns: Now up to 60 Days" },
-        { title: "Limited-Time Offer – Don’t Miss Out!" },
-    { title: "Lifetime Warranty on Select Products" },
-    { title: "Extended Returns: Now up to 60 Days" },
-        { title: "Limited-Time Offer – Don’t Miss Out!" },
-    { title: "Lifetime Warranty on Select Products" },
-    { title: "Extended Returns: Now up to 60 Days" },
-  ]
+const topbarContent = [
+  { title: "Limited-Time Offer – Don’t Miss Out!" },
+  { title: "Warranty on Select Products" },
+  { title: "Quality Checked Products" },
+  { title: "Limited-Time Offer – Don’t Miss Out!" },
+  { title: "Warranty on Select Products" },
+  { title: "Quality Checked Products" },
+    { title: "Quality Checked Products" },
+  { title: "Limited-Time Offer – Don’t Miss Out!" },
+  { title: "Warranty on Select Products" },
+  { title: "Quality Checked Products" },
+];
   return (
     <div className="tf-topbar bg-dark-5 topbar-bg">
       <div className="container">

@@ -9,11 +9,14 @@ import { useDispatch } from "react-redux";
 
 export default function Hero() {
   const [banners, setBanners] = useState([])
+  const [Loader, setLoader] = useState(false)
 
   const dispatch = useDispatch()
 
   const fetchBanners = () => {
+     setLoader(true)
     dispatch(getBanners((res) => {
+      setLoader(false)
       setBanners(res);
     }));
   }
@@ -24,6 +27,11 @@ export default function Hero() {
 
   return (
     <div className="tf-slideshow slider-electronic slider-default">
+      {
+        Loader && <div className="main_loader fixed">
+              <div className="page_loader"></div>
+            </div>
+      }
       <Swiper
         className="swiper tf-sw-slideshow slider-effect-fade"
         modules={[Autoplay, Pagination]}

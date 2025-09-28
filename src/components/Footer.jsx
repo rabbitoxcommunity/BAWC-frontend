@@ -197,7 +197,8 @@ export default function Footer2() {
           <ul className="tf-social-icon style-large">
             <li>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/share/1XLWrzCpCo/?mibextid=wwXIfr"
+                target="_blank"
                 className="social-item social-facebook"
               >
                 <i className="icon icon-fb" />
@@ -206,6 +207,7 @@ export default function Footer2() {
             <li>
               <a
                 href="https://www.instagram.com/bait_al_wahda_computers/"
+                target="_blank"
                 className="social-item social-instagram"
               >
                 <i className="icon icon-instagram" />

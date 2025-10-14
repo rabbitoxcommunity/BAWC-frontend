@@ -55,9 +55,9 @@ export default function Features() {
                   <i className="icon-shipping" />
                 </div>
                 <div className="box-text">
-                  <h6>Fast Shipping & Easy Returns</h6>
+                  <h6>Latest Innovative Technology</h6>
                   <p className="text-md">
-                    Enjoy quick delivery and a 14 to 60-day return policy for hassle-free purchases and peace of mind.
+                    Baital wahda ensures forward-thinking solutions for modern business challenges
                   </p>
                 </div>
               </li>

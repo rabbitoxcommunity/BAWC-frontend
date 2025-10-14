@@ -24,7 +24,7 @@ export const iconFeatures = [
 export const iconBoxes = [
   { title: "Direct WhatsApp Order Support", justify: "justify-content-sm-start", },
   { title: "Quick & Free Delivery", justify: "justify-content-center" },
-  { title: "Easy Return Within 7 Days", justify: "justify-content-center" },
+  { title: "Latest Technology", justify: "justify-content-center" },
 ];
 
 export const features = [

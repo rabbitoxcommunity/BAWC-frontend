@@ -14,7 +14,7 @@ export default function Hero() {
   const dispatch = useDispatch()
 
   const fetchBanners = () => {
-     setLoader(true)
+    setLoader(true)
     dispatch(getBanners((res) => {
       setLoader(false)
       setBanners(res);
@@ -29,8 +29,8 @@ export default function Hero() {
     <div className="tf-slideshow slider-electronic slider-default">
       {
         Loader && <div className="main_loader fixed">
-              <div className="page_loader"></div>
-            </div>
+          <div className="page_loader"></div>
+        </div>
       }
       <Swiper
         className="swiper tf-sw-slideshow slider-effect-fade"
@@ -52,13 +52,18 @@ export default function Hero() {
           >
             <div className={`slider-wrap ${slide.bgType}`}>
               <div className="image">
-                <img
-                  src={slide.image}
-                  alt="slider"
-                  className="lazyload"
-                // width={slide.imgWidth}
-                // height={slide.imgHeight}
-                />
+                <picture>
+                  {/* Mobile */}
+                  <source
+                    media="(max-width: 768px)"
+                    srcSet={slide?.image}
+                  />
+                  <img
+                    src={slide?.image}
+                    alt="slider"
+                    className="lazyload"
+                  />
+                </picture>
               </div>
               <div className="box-content">
                 <div className="container">
